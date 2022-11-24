@@ -6,7 +6,7 @@ public class trappingrainwater {
             leftmax[i]=Math.max(height[i],leftmax[i-1]);
         }
         int rightmax[]=new int[height.length];
-        rightmax[height.length]=height[height.length];
+        rightmax[height.length-1]=height[height.length-1];
         for(int i=height.length-2;i>=0;i--){
             rightmax[i]=Math.max(height[i],rightmax[i+1]);
         }
